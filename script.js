@@ -1,12 +1,14 @@
-Java
+// Formulaire de contact
 document.getElementById("contactForm").addEventListener("submit", function (e) {
-    e.preventDefault();
+    // Affiche un message avant l'envoi
     alert("Merci pour votre message ! Nous vous répondrons bientôt.");
-    this.reset();
+    // Le formulaire continue vers contact.php (pas de preventDefault)
 });
 
+// Menu hamburger
 const menuToggle = document.getElementById("menu-toggle");
 const navMenu = document.getElementById("nav-menu");
+
 menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
